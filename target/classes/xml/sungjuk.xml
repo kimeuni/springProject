@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xml에서 값 주기 -->
+
+<!-- beans와 xsi location 이 3개는 반드시 필요하다. -->
+<!-- 객체를 생성하기 위해서 xmlns:beans가 필요하다 -->
+<!-- 객체가 들어있는 위치를 필요하기 위해서 xsi:schemaLocation이 필요하다 -->  
+<!-- 주석처리한 <beans> 오류남 오류안나는거랑 비교해서 왜 오류나는지 한번 봐보기 -->
+<!-- <beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd"> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Atom atom = new Atom()  == > ex) id:atom / class:Atom() -->
+	<bean id="vo" class="com.spring.sExam.exam1207.SungjukVO">
+		<property name="name" value="홍길동"/>
+		<property name="kor" value="100"/>
+		<property name="eng" value="90"/>
+		<property name="mat" value="70"/>
+	</bean>
+	
+	<bean id="vo2" class="com.spring.sExam.exam1207.SungjukVO">
+		<property name="name" value="김말숙"/>
+		<property name="kor" value="90"/>
+		<property name="eng" value="80"/>
+		<property name="mat" value="70"/>
+	</bean>
+
+</beans>

@@ -175,4 +175,9 @@ public class BtomController {
 		
 		return "btom/b7";
 	}
+	
+	@RequestMapping(value = "/b8", method = RequestMethod.GET)
+	public String b8Get() {
+		return "btom/b8";
+	}
 }

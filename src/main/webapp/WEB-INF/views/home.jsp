@@ -47,7 +47,10 @@
 		<a href="${ctp}/btom/b5" class="btn btn-success">b5호출</a> |
 		<a href="${ctp}/btom/b6" class="btn btn-primary">b6호출</a> |
 		<a href="${ctp}/btom/b7" class="btn btn-success">b7호출</a> |
+		<a href="${ctp}/btom/b8" class="btn btn-primary">b8호출</a> |
 	</p>
+	<hr/>
+		<a href="${ctp}/ctom/c1" class="btn btn-success">c1호출</a> |
 </div>
 </body>
 </html>
