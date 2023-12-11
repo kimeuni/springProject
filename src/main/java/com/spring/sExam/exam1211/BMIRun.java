@@ -22,6 +22,7 @@ public class BMIRun {
 		vo.getService().printTitle();
 		vo.getService().printLine();
 		
+		
 		// 반복문 돌리기 (배열에 담아서)
 		BMIVO[] bmis = {(BMIVO) ctx.getBean("person1"),(BMIVO) ctx.getBean("person2"),(BMIVO) ctx.getBean("person3")};
 		
