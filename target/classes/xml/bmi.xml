@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="serviceCalc" class="com.spring.sExam.exam1211.BMIService" />
+
+	<!-- 데이터는 최소 3명 주입 -->
+	<bean id="person1" class="com.spring.sExam.exam1211.BMIVO">  
+		<property name="name" value="홍길동"></property>
+		<property name="height" value="175"></property>
+		<property name="weight" value="70"></property>
+		
+		<property name="service" ref="serviceCalc"></property>
+	</bean>
+	
+	<bean id="person2" class="com.spring.sExam.exam1211.BMIVO">  
+		<property name="name" value="이기자"></property>
+		<property name="height" value="180"></property>
+		<property name="weight" value="100"></property>
+	</bean>
+	
+	<bean id="person3" class="com.spring.sExam.exam1211.BMIVO">  
+		<property name="name" value="김말숙"></property>
+		<property name="height" value="165"></property>
+		<property name="weight" value="45"></property>
+	</bean>
+
+</beans>

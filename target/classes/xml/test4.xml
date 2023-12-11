@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="serviceCalc" class="com.spring.sExam.exam1211.Test4Service" />
+
+	<bean id="vo1" class="com.spring.sExam.exam1211.Test4VO">
+		<property name="name" value="홍길동"></property>  
+		<property name="kor" value="100"></property>  
+		<property name="eng" value="90"></property>  
+		<property name="mat" value="80"></property>  
+		
+		<!-- ref : 참조 -->
+		<!-- serviceCalc을 service란 이름으로 참조해서 사용하겠다... -->
+		<property name="service" ref="serviceCalc" />
+	</bean>
+	
+	<bean id="vo2" class="com.spring.sExam.exam1211.Test4VO">
+		<property name="name" value="김말숙"></property>  
+		<property name="kor" value="91"></property>  
+		<property name="eng" value="80"></property>  
+		<property name="mat" value="70"></property>  
+	</bean>
+	
+	<bean id="vo3" class="com.spring.sExam.exam1211.Test4VO">
+		<property name="name" value="이기자"></property>  
+		<property name="kor" value="80"></property>  
+		<property name="eng" value="70"></property>  
+		<property name="mat" value="60"></property>  
+	</bean>
+
+</beans>

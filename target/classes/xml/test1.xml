@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- exam1211 => Test1Infor관련 -->
+<!-- setter을 통한 값의 주입 -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- class를 가져올 때, xml은 import가 안되기 때문에 패키지명까지 가져와야 한다. -->
+	<bean id="infor" class="com.spring.sExam.exam1211.Test1Infor"> 
+		<!-- name => 사용할 변수명  / value="" 변수에 넣을 값 --> 
+		<property name="driver" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/javaProject"/>
+		<property name="user" value="root"/>
+		<property name="password" value="1234"/>
+	</bean>
+
+</beans>
